@@ -1,0 +1,11 @@
+// graphic styles
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  @include transition( color .3s );
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}

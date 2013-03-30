@@ -1,0 +1,25 @@
+//-----------------------
+// general global layout
+
+#main-header, #main, #main-footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section { margin-bottom: $gutter-section; }
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, article, section, aside, figure {
+  margin-bottom: $gutter-vertical;
+}
+
+img { max-width: 100%; }
+
+figcaption {
+  margin-top: $gutter-vertical;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: $tablet-landscape ) {
+  * -webkit-text-size-adjust: none;
+}

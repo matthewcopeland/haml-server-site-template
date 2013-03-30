@@ -1,0 +1,32 @@
+$sans-fallback: Arial, Verdana, sans-serif;
+$open-sans: "Open sans";
+$sans: $open-sans $sans-fallback;
+
+
+// font-szies
+$body-copy-size: 14px;
+
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 14px; }
+p  { font-size: $body-copy-size; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+}
+
+h3, h4, h5, h6 { font-weight: bold; }
+
+
+%bodycopy {
+  font-size: $body-copy-size;
+  color: $body-copy-color;
+}
+
+html {
+  font-family: $sans;
+  @extend %bodycopy;
+}
+
+strong { font-weight: bold; }

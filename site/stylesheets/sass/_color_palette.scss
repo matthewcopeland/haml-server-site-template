@@ -1,0 +1,12 @@
+// Primary
+$white: #FFFFFF;
+$black: #000000;
+
+// namespacing
+$body-bg: #F4F4F4;
+$body-copy-color: #333;
+$grey-copy: #999;
+$off-white: #efefef;
+$link-color: $body-copy-color;
+$link-color-hover: lighten($body-copy-color, 20);
+$bevel-border-dark-color: #d0d0d0;

@@ -1,0 +1,13 @@
+$gutter-vertical: .5em;
+$gutter-horizontal: 1em;
+$gutter-section: $gutter-vertical*3;
+
+$image-box-shadow: 0 1px 3px 0 rgba(0,0,0, .4);
+$image-box-shadow-deep: -1px 4px 8px 1px rgba(0,0,0, .4);
+
+// media query variables
+$tablet-landscape: 1024px;
+$tablet-portrait: 768px;
+$small-tablet-portrait: 767px;
+$mobile-landscape: 599px;
+$mobile-portrait: 479px;

@@ -1,0 +1,26 @@
+%html
+  %head
+    %meta(charset="UTF-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    %title Site title
+    %link{rel: 'icon', href:'/images/favicon.ico', type: 'image/ico'}
+    %link{rel:'stylesheet', type:'text/css', href:'/stylesheets/css/screen.css'}
+    %script{src:"/javascripts/jquery.js"}
+    %script{src:"/javascripts/app.js"}
+
+  %body
+    #header-wrapper
+      %header#main-header
+        %h1
+          %a{href:"/"} Svg Spikes
+        %nav#main-nav
+          %ul
+            - nav_links.each do |nav_link|
+              %li{ class: nav_link }
+                %a{href:"#"}= nav_link
+
+    #main-wrapper.wrapper
+      #main= yield
+
+    #footer-wrapper
+      %footer#main-footer

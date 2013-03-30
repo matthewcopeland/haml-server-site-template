@@ -1,0 +1,70 @@
+#contact-wrapper {
+  @extend %sidebar-layout;
+  a[href^="tel:"] {
+    font-weight: bold;
+  }
+}
+
+
+.sidebar-map { margin-bottom: $gutter-vertical; }
+
+
+.main { padding-right: $gutter-horizontal; }
+
+
+
+.view-hours {
+  padding-top: $gutter-vertical;
+  font-size: .8em;
+}
+
+.hours-table {
+  @extend .resource;
+  margin-bottom: $gutter-vertical;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  th, td {
+    vertical-align: top;
+    word-break: break-word;
+  }
+}
+
+.hours-list, .extra-assistance-list {
+  p { @include bevel(vertical); }
+  strong, small { display: block; }
+}
+
+.contact-details {
+  display: block;
+}
+
+.social {
+  li { display: inline-block; }
+  a { display: block; }
+}
+
+.accordion-trigger.extra-assistance:before { right: .5em; }
+
+
+@media only screen and (max-width: $small-tablet-portrait ) {
+  .page-title {
+    padding-right: $gutter-horizontal;
+    padding-left: $gutter-horizontal/2;
+  }
+
+  .resource {
+    padding: 0;
+    margin-bottom: $gutter-vertical*3;
+    @include box-shadow( 0 2px 3px 0 rgba(203,203,203,1) );
+    @include border-radius( 4px );
+
+    h2, h3 { padding: $gutter-vertical/2 $gutter-horizontal/2; }
+
+    .social, p:not(.mnumber) { padding: $gutter-vertical $gutter-horizontal; }
+
+    > * { margin-bottom: 0; }
+  }
+
+}
+

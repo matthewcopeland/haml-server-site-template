@@ -1,0 +1,6 @@
+@mixin list-style( $style ) {
+    &, > li { list-style-type: $style; }
+    > li { padding-left: .5em; }
+}
+
+%disc-list { @include list-style( disc ); }
