@@ -17,7 +17,7 @@
           %ul
             - nav_links.each do |nav_link|
               %li{ class: nav_link }
-                %a{href:"#"}= nav_link
+                %a{href:"#{parameterize(nav_link)}"}= nav_link
 
     #main-wrapper.wrapper
       #main= yield
