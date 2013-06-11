@@ -9,18 +9,8 @@
     %script{src:"/javascripts/app.js"}
 
   %body
-    #header-wrapper
-      %header#main-header
-        %h1
-          %a{href:"/"} Svg Spikes
-        %nav#main-nav
-          %ul
-            - nav_links.each do |nav_link|
-              %li{ class: nav_link }
-                %a{href:"#{parameterize(nav_link)}"}= nav_link
+    = haml :'_header'
 
-    #main-wrapper.wrapper
-      #main= yield
+    %section#main= yield
 
-    #footer-wrapper
-      %footer#main-footer
+    = haml :'_footer'

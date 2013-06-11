@@ -1,0 +1,8 @@
+%header#main-header
+  %h1
+    %a{href:"/"} Title
+  %nav#main-nav
+    %ul
+      - nav_links.each do |nav_link|
+        %li{ class: nav_link }
+          %a{href:"#{parameterize(nav_link)}"}= nav_link
