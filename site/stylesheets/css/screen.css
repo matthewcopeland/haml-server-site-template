@@ -1,10 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,600,800);
 * {
   -webkit-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -icab-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -91,8 +88,6 @@ figcaption {
   height: 380px;
   width: 80%;
   background-color: #000;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer; }
   .placeholder-video:before, .video-wrapper:before {
