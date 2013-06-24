@@ -6,20 +6,15 @@
   margin: 0 auto;
 }
 
-section { margin-bottom: $gutter-section; }
-
 h1, h2, h3, h4, h5, h6, ol, ul, p, article, section, aside, figure {
   margin-bottom: $gutter-vertical;
 }
 
-img { max-width: 100%; }
+section { margin-bottom: $gutter-section; }
 
-figcaption {
-  margin-top: $gutter-vertical;
-  text-align: center;
-}
+img { max-width: 100%; }
 
 
 @media only screen and (max-width: $tablet-landscape ) {
-  * -webkit-text-size-adjust: none;
+  * { -webkit-text-size-adjust: none; }
 }

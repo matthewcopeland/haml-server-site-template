@@ -63,21 +63,18 @@ a {
   max-width: 960px;
   margin: 0 auto; }
 
-section {
-  margin-bottom: 1.5em; }
-
 h1, h2, h3, h4, h5, h6, ol, ul, p, article, section, aside, figure {
-  margin-bottom: 0.5em; }
+  margin-bottom: 10px; }
+
+section {
+  margin-bottom: 20px; }
 
 img {
   max-width: 100%; }
 
-figcaption {
-  margin-top: 0.5em;
-  text-align: center; }
-
 @media only screen and (max-width: 1024px) {
-  * -webkit-text-size-adjust: none; }
+  * {
+    -webkit-text-size-adjust: none; } }
 #main-nav li {
   display: inline-block; }
 

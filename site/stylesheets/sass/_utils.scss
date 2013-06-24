@@ -104,7 +104,7 @@ $bevel-dark-border: 1px solid $bevel-border-dark-color;
   $css-spread: $size * $spread/100;
   $blur: ($size - $css-spread);
   $inset: if($inner != false, 'inset', '');
-  @include box-shadow($h-shadow $v-shadow $blur $css-spread $color unquote($inset));
+  box-shadow: $h-shadow $v-shadow $blur $css-spread $color unquote($inset);
 }//@mixin
 
 //--------------------------------
